@@ -18,13 +18,14 @@
 
 -(void)viewWillAppear:(BOOL)animated{
 	 [super viewWillAppear:YES];
-	 
+
+    /*
 	 NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 	 
 	 if ([prefs objectForKey:@"Usuario"] != nil) {
 		  [self performSegueWithIdentifier:@"Home" sender:nil];
 	 }
-	 
+	 */
 
 }
 
@@ -81,9 +82,9 @@
 		  _UsrTxt.text = @"";
 					 
 
-		  [self.view endEditing:YES];
 		  [self performSegueWithIdentifier:@"Home" sender:nil];
-				
+          [self.view endEditing:YES];
+
 		  }
 		  else{
 					 UIAlertController *alert = [UIAlertController
