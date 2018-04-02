@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252324132072D2D400B2E4E8 /* PDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 252324122072D2D400B2E4E8 /* PDFReaderViewController.m */; };
+		252324152072D46B00B2E4E8 /* Terminos_Condiciones.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 252324142072D46B00B2E4E8 /* Terminos_Condiciones.pdf */; };
+		252324172072D61800B2E4E8 /* EDC-Mexico-dj.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 252324162072D61800B2E4E8 /* EDC-Mexico-dj.jpg */; };
+		252324192072D80700B2E4E8 /* edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 252324182072D80600B2E4E8 /* edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg */; };
 		BC726036207296EC000200A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC726035207296EC000200A3 /* AppDelegate.m */; };
 		BC72603C207296EC000200A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC72603A207296EC000200A3 /* Main.storyboard */; };
 		BC72603F207296EC000200A3 /* SoundParty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC72603D207296EC000200A3 /* SoundParty.xcdatamodeld */; };
@@ -39,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252324112072D2D400B2E4E8 /* PDFReaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFReaderViewController.h; sourceTree = "<group>"; };
+		252324122072D2D400B2E4E8 /* PDFReaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFReaderViewController.m; sourceTree = "<group>"; };
+		252324142072D46B00B2E4E8 /* Terminos_Condiciones.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Terminos_Condiciones.pdf; sourceTree = "<group>"; };
+		252324162072D61800B2E4E8 /* EDC-Mexico-dj.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EDC-Mexico-dj.jpg"; sourceTree = "<group>"; };
+		252324182072D80600B2E4E8 /* edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg"; sourceTree = "<group>"; };
 		BC726031207296EC000200A3 /* SoundParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC726034207296EC000200A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC726035207296EC000200A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +128,11 @@
 				BC72606C20729E8D000200A3 /* LogInViewController.h */,
 				BC72606D20729E8D000200A3 /* LogInViewController.m */,
 				BC72603A207296EC000200A3 /* Main.storyboard */,
+				252324182072D80600B2E4E8 /* edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg */,
+				252324142072D46B00B2E4E8 /* Terminos_Condiciones.pdf */,
+				252324112072D2D400B2E4E8 /* PDFReaderViewController.h */,
+				252324162072D61800B2E4E8 /* EDC-Mexico-dj.jpg */,
+				252324122072D2D400B2E4E8 /* PDFReaderViewController.m */,
 				BC7260722072CDDA000200A3 /* SettingsTableViewController.h */,
 				BC7260732072CDDA000200A3 /* SettingsTableViewController.m */,
 				BC72606F2072C90F000200A3 /* HomeViewController.h */,
@@ -258,6 +272,9 @@
 			files = (
 				BC726044207296EC000200A3 /* LaunchScreen.storyboard in Resources */,
 				BC726041207296EC000200A3 /* Assets.xcassets in Resources */,
+				252324172072D61800B2E4E8 /* EDC-Mexico-dj.jpg in Resources */,
+				252324152072D46B00B2E4E8 /* Terminos_Condiciones.pdf in Resources */,
+				252324192072D80700B2E4E8 /* edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg in Resources */,
 				BC72603C207296EC000200A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252324132072D2D400B2E4E8 /* PDFReaderViewController.m in Sources */,
 				BC7260742072CDDA000200A3 /* SettingsTableViewController.m in Sources */,
 				BC72603F207296EC000200A3 /* SoundParty.xcdatamodeld in Sources */,
 				BC726047207296EC000200A3 /* main.m in Sources */,

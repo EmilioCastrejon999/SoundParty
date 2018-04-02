@@ -8,6 +8,7 @@
 //
 
 #import "HomeViewController.h"
+#import "LogInViewController.h"
 
 @interface HomeViewController ()
 
@@ -15,7 +16,7 @@
 
 @implementation HomeViewController
 
--(void)viewDidAppear:(BOOL)animated{
+-(void)viewWillAppear:(BOOL)animated{
 	 [super viewDidAppear:YES];
 	 
 	 self.navigationItem.hidesBackButton = YES;
@@ -29,10 +30,11 @@
 
 - (IBAction)logOut:(id)sender {
 	 NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-	 [prefs setObject:nil forKey:@"Usuario"];
+     [prefs removeObjectForKey:@"Usuario"];
 	 [prefs synchronize];
 	 
-	 [self.navigationController popViewControllerAnimated:YES];
+    LogInViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"LogIn"];
+	 [self.navigationController pushViewController:view animated:YES];
 }
 
 @end
