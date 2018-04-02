@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@interface SettingsTableViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@interface SettingsTableViewController : UITableViewController
+
 @property (weak, nonatomic) IBOutlet UITextField *Nombretxt;
 @property (weak, nonatomic) IBOutlet UITextField *Usuariotxt;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;

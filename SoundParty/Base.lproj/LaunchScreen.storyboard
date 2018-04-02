@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -20,6 +20,10 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2o6-6E-n3W"/>
+                        <viewControllerLayoutGuide type="bottom" id="I2N-JX-hVe"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,14 +58,13 @@
                             <constraint firstItem="oSJ-jY-stg" firstAttribute="trailing" secondItem="2NC-r7-Ty0" secondAttribute="trailing" id="4dQ-VN-yNG"/>
                             <constraint firstItem="oSJ-jY-stg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="AVU-sY-9Xn"/>
                             <constraint firstItem="oSJ-jY-stg" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="NBI-A7-hgH"/>
-                            <constraint firstItem="nhR-Rk-S1A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="a8O-zB-hGF"/>
+                            <constraint firstItem="nhR-Rk-S1A" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="37" id="a8O-zB-hGF"/>
                             <constraint firstItem="nhR-Rk-S1A" firstAttribute="centerX" secondItem="oSJ-jY-stg" secondAttribute="centerX" id="cfo-xD-NEe"/>
                             <constraint firstAttribute="bottom" secondItem="2NC-r7-Ty0" secondAttribute="bottom" constant="20" symbolic="YES" id="eUv-Yo-Nrk"/>
                             <constraint firstItem="oSJ-jY-stg" firstAttribute="leading" secondItem="2NC-r7-Ty0" secondAttribute="leading" id="ohQ-lb-IB2"/>
-                            <constraint firstItem="nhR-Rk-S1A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="xir-Du-oF3"/>
+                            <constraint firstItem="nhR-Rk-S1A" firstAttribute="top" secondItem="2o6-6E-n3W" secondAttribute="bottom" constant="107" id="xir-Du-oF3"/>
                             <constraint firstItem="2NC-r7-Ty0" firstAttribute="top" secondItem="oSJ-jY-stg" secondAttribute="bottom" constant="8" symbolic="YES" id="xp1-Gv-Hft"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
