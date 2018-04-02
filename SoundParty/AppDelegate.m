@@ -95,4 +95,81 @@
     }
 }
 
+
+
+- (NSString *)ResponseFromUrl: (NSString *)UrlString Async:(BOOL)Asynchronous SpinnerColor: (UIColor *)Color{
+	 
+	 if (Asynchronous == NO) {
+		  [self spinnerSetup :Color];
+	 }
+	 
+	 NSString *UrlPath = @"http://192.168.0.35/SoundPartyServer/";
+	 UrlString = [UrlPath stringByAppendingString:UrlString];
+	 
+	 UrlString = [UrlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+	 
+	 NSDate *timeoutDate = [NSDate dateWithTimeIntervalSinceNow:25];
+	 __block NSString *RespuestaInternet;
+	 __block BOOL ResponseHasArrived = NO;
+	 
+	 NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+	 
+	 [request setURL:[NSURL URLWithString:UrlString]];
+	 
+	 NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+	 [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+		  if (error) {
+				NSLog(@"Error,%@", [error localizedDescription]);
+		  }
+		  else {
+				ResponseHasArrived = YES;
+				RespuestaInternet = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+		  }
+	 }];
+	 
+	 while (ResponseHasArrived == NO && ([timeoutDate timeIntervalSinceNow] > 0))
+	 {
+		  CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0.01, YES);
+	 }
+	 
+	 
+	 
+	 [_spinner stopAnimating];
+	 [[UIApplication sharedApplication] endIgnoringInteractionEvents];
+	 
+	 if (ResponseHasArrived == NO) {
+		  UIAlertController *alert = [UIAlertController
+												alertControllerWithTitle:@"Error con la conexion a internet"
+												message:@"Intente de nuevo mas tarde"
+												preferredStyle:UIAlertControllerStyleAlert];
+		  
+		  [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
+		  
+		  [NSTimer scheduledTimerWithTimeInterval:2 repeats:NO block:^(NSTimer *timer) {
+				[self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
+		  }];
+		  
+		  return nil;
+	 }
+	 
+	 else{
+		  return RespuestaInternet;
+		  
+	 }
+}
+
+-(void)spinnerSetup :(UIColor *)Color{
+	 _spinner =
+	 [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+	 
+	 _spinner.hidden = NO;
+	 _spinner.center = self.window.center;
+	 _spinner.color = Color;
+	 _spinner.hidesWhenStopped = YES;
+	 [self.window addSubview:_spinner];
+	 [self.window bringSubviewToFront:_spinner];
+	 [_spinner startAnimating];
+	 [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+}
+
 @end

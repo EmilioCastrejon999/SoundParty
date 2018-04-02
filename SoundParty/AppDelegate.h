@@ -12,10 +12,11 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
+@property UIActivityIndicatorView *spinner;
 
 - (void)saveContext;
+- (NSString *)ResponseFromUrl: (NSString *)UrlString Async:(BOOL)Asynchronous SpinnerColor: (UIColor *)Color;
 
 
 @end

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BC726036207296EC000200A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC726035207296EC000200A3 /* AppDelegate.m */; };
-		BC726039207296EC000200A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC726038207296EC000200A3 /* ViewController.m */; };
 		BC72603C207296EC000200A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC72603A207296EC000200A3 /* Main.storyboard */; };
 		BC72603F207296EC000200A3 /* SoundParty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC72603D207296EC000200A3 /* SoundParty.xcdatamodeld */; };
 		BC726041207296EC000200A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC726040207296EC000200A3 /* Assets.xcassets */; };
@@ -16,6 +15,10 @@
 		BC726047207296EC000200A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC726046207296EC000200A3 /* main.m */; };
 		BC726051207296EC000200A3 /* SoundPartyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC726050207296EC000200A3 /* SoundPartyTests.m */; };
 		BC72605C207296EC000200A3 /* SoundPartyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC72605B207296EC000200A3 /* SoundPartyUITests.m */; };
+		BC72606B20729E7F000200A3 /* SignUpTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC72606A20729E7F000200A3 /* SignUpTableViewController.m */; };
+		BC72606E20729E8D000200A3 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC72606D20729E8D000200A3 /* LogInViewController.m */; };
+		BC7260712072C90F000200A3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7260702072C90F000200A3 /* HomeViewController.m */; };
+		BC7260742072CDDA000200A3 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7260732072CDDA000200A3 /* SettingsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,6 @@
 		BC726031207296EC000200A3 /* SoundParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC726034207296EC000200A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC726035207296EC000200A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BC726037207296EC000200A3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BC726038207296EC000200A3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BC72603B207296EC000200A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC72603E207296EC000200A3 /* SoundParty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundParty.xcdatamodel; sourceTree = "<group>"; };
 		BC726040207296EC000200A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +54,14 @@
 		BC726057207296EC000200A3 /* SoundPartyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundPartyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC72605B207296EC000200A3 /* SoundPartyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundPartyUITests.m; sourceTree = "<group>"; };
 		BC72605D207296EC000200A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC72606920729E7F000200A3 /* SignUpTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpTableViewController.h; sourceTree = "<group>"; };
+		BC72606A20729E7F000200A3 /* SignUpTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpTableViewController.m; sourceTree = "<group>"; };
+		BC72606C20729E8D000200A3 /* LogInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		BC72606D20729E8D000200A3 /* LogInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		BC72606F2072C90F000200A3 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		BC7260702072C90F000200A3 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		BC7260722072CDDA000200A3 /* SettingsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		BC7260732072CDDA000200A3 /* SettingsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +114,15 @@
 			children = (
 				BC726034207296EC000200A3 /* AppDelegate.h */,
 				BC726035207296EC000200A3 /* AppDelegate.m */,
-				BC726037207296EC000200A3 /* ViewController.h */,
-				BC726038207296EC000200A3 /* ViewController.m */,
+				BC72606920729E7F000200A3 /* SignUpTableViewController.h */,
+				BC72606A20729E7F000200A3 /* SignUpTableViewController.m */,
+				BC72606C20729E8D000200A3 /* LogInViewController.h */,
+				BC72606D20729E8D000200A3 /* LogInViewController.m */,
 				BC72603A207296EC000200A3 /* Main.storyboard */,
+				BC7260722072CDDA000200A3 /* SettingsTableViewController.h */,
+				BC7260732072CDDA000200A3 /* SettingsTableViewController.m */,
+				BC72606F2072C90F000200A3 /* HomeViewController.h */,
+				BC7260702072C90F000200A3 /* HomeViewController.m */,
 				BC726040207296EC000200A3 /* Assets.xcassets */,
 				BC726042207296EC000200A3 /* LaunchScreen.storyboard */,
 				BC726045207296EC000200A3 /* Info.plist */,
@@ -268,10 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7260742072CDDA000200A3 /* SettingsTableViewController.m in Sources */,
 				BC72603F207296EC000200A3 /* SoundParty.xcdatamodeld in Sources */,
-				BC726039207296EC000200A3 /* ViewController.m in Sources */,
 				BC726047207296EC000200A3 /* main.m in Sources */,
+				BC72606E20729E8D000200A3 /* LogInViewController.m in Sources */,
 				BC726036207296EC000200A3 /* AppDelegate.m in Sources */,
+				BC72606B20729E7F000200A3 /* SignUpTableViewController.m in Sources */,
+				BC7260712072C90F000200A3 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
