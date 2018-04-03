@@ -61,11 +61,32 @@
 	 
 	 [picker dismissViewControllerAnimated:YES completion:NULL];
 }
--(void)ChangeNombre{
+
+- (IBAction)ChangeName:(id)sender {
 	 AppDelegate *appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
 	 
+	 NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 	 
+	 NSString *UrlInfo = [NSString stringWithFormat:@"userid=%@&nombre=%@&user=%@",[prefs objectForKey:@"Usuario"],_Nombretxt.text, _Usuariotxt.text];
 	 
+	 NSString *Url = [NSString stringWithFormat:@"Settings.php/?%@",UrlInfo];
+	 
+	NSString *Response =  [appDelegate ResponseFromUrl:Url Async:YES SpinnerColor:nil];
+	 
+	 if ([Response isEqualToString:@"Modificado"]) {
+		  UIAlertController *alert = [UIAlertController
+												alertControllerWithTitle:@"Ready"
+												message:@"the info has been updated successfully"
+												preferredStyle:UIAlertControllerStyleAlert];
+		  
+		  [self presentViewController:alert animated:YES completion:nil];
+		  
+		  [NSTimer scheduledTimerWithTimeInterval:2 repeats:NO block:^(NSTimer *timer) {
+				[self dismissViewControllerAnimated:YES completion:nil];
+		  }];
+		  
+		  [self.navigationController popViewControllerAnimated:YES];
+	 }
 }
 
 

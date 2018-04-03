@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xbg-hB-43x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xbg-hB-43x">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Bold</string>
+            <string>ChalkboardSE-Light</string>
+            <string>ChalkboardSE-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home-->
         <scene sceneID="LwL-H7-eJb">
@@ -160,6 +167,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="9KE-Zj-3vf" kind="show" id="skR-PY-o15"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWh-Xe-64k">
                                 <rect key="frame" x="197" y="280" width="134" height="51"/>
@@ -173,6 +183,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="8Ty-JL-nZc" kind="show" id="cRT-tJ-tP8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jv-44-IMI">
                                 <rect key="frame" x="43" y="280" width="134" height="51"/>
@@ -190,6 +203,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="TWq-h9-gcd" kind="show" id="GOH-kK-BK9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfC-wA-aAq">
                                 <rect key="frame" x="33" y="479" width="309" height="48"/>
@@ -628,7 +644,7 @@
                                 <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wiO-28-rdH">
-                                <rect key="frame" x="16" y="47" width="343" height="426"/>
+                                <rect key="frame" x="16" y="91" width="343" height="382"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0J-t3-2qc">
                                 <rect key="frame" x="16" y="481" width="343" height="26"/>
@@ -1080,7 +1096,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings Details" id="lbu-FD-SR5">
-                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="MJo-J5-zaK"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="MJo-J5-zaK">
+                            <connections>
+                                <action selector="ChangeName:" destination="8av-it-LWs" id="xzX-cE-FjZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="Nombretxt" destination="K0E-WT-fKt" id="uA0-aD-vc9"/>

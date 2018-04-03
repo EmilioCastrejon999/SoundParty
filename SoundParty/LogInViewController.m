@@ -71,11 +71,10 @@
 		  NSString *RespuetaInternet =
 		  [appDelegate ResponseFromUrl:Url Async:NO SpinnerColor:[UIColor whiteColor]];
 				
-		  if ([RespuetaInternet isEqualToString:@"Ingreso"]) {
-				
-				
+		  if ([RespuetaInternet floatValue]) {
+								
 		  NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-		  [prefs setObject:_UsrTxt.text forKey:@"Usuario"];
+		  [prefs setObject:RespuetaInternet forKey:@"Usuario"];
 		  [prefs synchronize];
 				
 		  _PassTxt.text = @"";
@@ -120,8 +119,8 @@
 	 else{
 		  
 		  UIAlertController *alert =
-		  [UIAlertController alertControllerWithTitle:@"Para restablecer "
-														  message: @"Espere un correo con instrucciones. Por seguridad su usuario será invalidado hasta que la recupere\n Le sugerimos revisar la carpeta de 'no deseado' en su email"
+		  [UIAlertController alertControllerWithTitle:@"For restablish"
+														  message: @"Wait an email with information. For you security your user will be invalideted\n Please check the junk in your email"
 												 preferredStyle:UIAlertControllerStyleActionSheet];
 		  
 		  
