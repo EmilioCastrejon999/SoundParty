@@ -11,6 +11,7 @@
 		252324152072D46B00B2E4E8 /* Terminos_Condiciones.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 252324142072D46B00B2E4E8 /* Terminos_Condiciones.pdf */; };
 		252324172072D61800B2E4E8 /* EDC-Mexico-dj.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 252324162072D61800B2E4E8 /* EDC-Mexico-dj.jpg */; };
 		252324192072D80700B2E4E8 /* edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 252324182072D80600B2E4E8 /* edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg */; };
+		2523241C207370E300B2E4E8 /* SettingsMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2523241B207370E300B2E4E8 /* SettingsMenuTableViewController.m */; };
 		BC726036207296EC000200A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC726035207296EC000200A3 /* AppDelegate.m */; };
 		BC72603C207296EC000200A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC72603A207296EC000200A3 /* Main.storyboard */; };
 		BC72603F207296EC000200A3 /* SoundParty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC72603D207296EC000200A3 /* SoundParty.xcdatamodeld */; };
@@ -48,6 +49,8 @@
 		252324142072D46B00B2E4E8 /* Terminos_Condiciones.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Terminos_Condiciones.pdf; sourceTree = "<group>"; };
 		252324162072D61800B2E4E8 /* EDC-Mexico-dj.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EDC-Mexico-dj.jpg"; sourceTree = "<group>"; };
 		252324182072D80600B2E4E8 /* edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg"; sourceTree = "<group>"; };
+		2523241A207370E300B2E4E8 /* SettingsMenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsMenuTableViewController.h; sourceTree = "<group>"; };
+		2523241B207370E300B2E4E8 /* SettingsMenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsMenuTableViewController.m; sourceTree = "<group>"; };
 		BC726031207296EC000200A3 /* SoundParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC726034207296EC000200A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC726035207296EC000200A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -127,12 +130,14 @@
 				BC72606A20729E7F000200A3 /* SignUpTableViewController.m */,
 				BC72606C20729E8D000200A3 /* LogInViewController.h */,
 				BC72606D20729E8D000200A3 /* LogInViewController.m */,
+				2523241A207370E300B2E4E8 /* SettingsMenuTableViewController.h */,
+				2523241B207370E300B2E4E8 /* SettingsMenuTableViewController.m */,
 				BC72603A207296EC000200A3 /* Main.storyboard */,
 				252324182072D80600B2E4E8 /* edcmx-61751eed942fd764c6d5635f9e4778df-1200x600.jpg */,
 				252324142072D46B00B2E4E8 /* Terminos_Condiciones.pdf */,
 				252324112072D2D400B2E4E8 /* PDFReaderViewController.h */,
-				252324162072D61800B2E4E8 /* EDC-Mexico-dj.jpg */,
 				252324122072D2D400B2E4E8 /* PDFReaderViewController.m */,
+				252324162072D61800B2E4E8 /* EDC-Mexico-dj.jpg */,
 				BC7260722072CDDA000200A3 /* SettingsTableViewController.h */,
 				BC7260732072CDDA000200A3 /* SettingsTableViewController.m */,
 				BC72606F2072C90F000200A3 /* HomeViewController.h */,
@@ -307,6 +312,7 @@
 				BC72606E20729E8D000200A3 /* LogInViewController.m in Sources */,
 				BC726036207296EC000200A3 /* AppDelegate.m in Sources */,
 				BC72606B20729E7F000200A3 /* SignUpTableViewController.m in Sources */,
+				2523241C207370E300B2E4E8 /* SettingsMenuTableViewController.m in Sources */,
 				BC7260712072C90F000200A3 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

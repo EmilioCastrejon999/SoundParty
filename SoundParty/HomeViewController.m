@@ -8,7 +8,6 @@
 //
 
 #import "HomeViewController.h"
-#import "LogInViewController.h"
 
 @interface HomeViewController ()
 
@@ -27,14 +26,5 @@
     // Do any additional setup after loading the view.
 }
 
-
-- (IBAction)logOut:(id)sender {
-	 NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-     [prefs removeObjectForKey:@"Usuario"];
-	 [prefs synchronize];
-	 
-    LogInViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"LogIn"];
-	 [self.navigationController pushViewController:view animated:YES];
-}
 
 @end
